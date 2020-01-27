@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class xp_hp : MonoBehaviour
 {
-    public float hp;
-    public float xp;
-    public int lvl;
     public GameObject PlayerHp;
     public GameObject PlayerXp;
+    public int hp;
+    public float xp;
+    public int lvl;
+    private Rigidbody2D rb;
     
-
     void initPlayer()
     {
-        hp = 100.0f;
+        hp = 100;
         xp = 0;
         lvl = 1;
     }
@@ -27,8 +28,9 @@ public class xp_hp : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        GameObject hpText = PlayerHp;
+    {       
+        GameObject UiHp = PlayerHp;
+        int HpActual = hp;
         /*colision
         if ()
         {
@@ -44,6 +46,6 @@ public class xp_hp : MonoBehaviour
             xp -= 100;
             lvl += 1;
         }
-        hpText.GetComponent<Text>().text = hp.ToString;
+        UiHp.GetComponent<Text>().text = HpActual.ToString();
     }
 }
