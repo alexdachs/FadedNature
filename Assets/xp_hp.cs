@@ -18,17 +18,23 @@ public class xp_hp : MonoBehaviour
     private int startLvl = 1;
     public int lvl;
     //ATK
-    public float AttackDmg;
-    
-    
-    
-    
+    public int AttackDmg;
+    //JUMP
+    public float JumpForce = 1f;
+    public bool PuedoSaltar = false;
+    //RB2D
+    private Rigidbody2D body;
+    public float MaxSpeed = 15f;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        //GET RB2D
+        body = GetComponent<Rigidbody2D>();
         //INIT PLAYER STATS
-        AttackDmg = 25f;
+        AttackDmg = 25;
         hp = iniHp;
         lvl = startLvl;
         xp = 0;
@@ -37,10 +43,18 @@ public class xp_hp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //MOVE
+        float Xdireccion = Input.GetAxis("Horizontal");
+        body.velocity = new Vector2(Xdireccion * MaxSpeed, body.velocity.y);
+        //JUMP
+        if (Input.GetKeyDown(KeyCode.Space) && PuedoSaltar == true)
+        {
+            Jump();
+        }
         //DIE
         if (hp <= 0)
         {
-            
+            //TO DO: RESPAWN MENU
             xp = 0;
             Destroy(gameObject);
         }
@@ -55,21 +69,35 @@ public class xp_hp : MonoBehaviour
         PlayerXp.GetComponent<Text>().text = xp.ToString();
         PlayerLvl.GetComponent<Text>().text = lvl.ToString();
     }
+
+    //JUMP
+    void Jump()
+    {
+        body.velocity = new Vector2(body.velocity.x, JumpForce);
+        PuedoSaltar = false;
+    }
+
+    //COLLISIONS
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //JUMP
+        if (collision.gameObject.tag == "Floor")
+        {
+            PuedoSaltar = true;
+        }
         //COLLISION WITH ENEMYS
-        
-        if (collision.gameObject.tag == "BasicEnemy")
+
+        if (collision.gameObject.tag == "BasicEnemyCol")
         {
-            hp -= 10;
+            hp = hp -5;
         }
-        if (collision.gameObject.tag == "MediumEnemy")
+        if (collision.gameObject.tag == "MediumEnemyCol")
         {
-            hp -= 15;
+            hp = hp-10;
         }
-        if (collision.gameObject.tag == "HardEnemy")
+        if (collision.gameObject.tag == "HardEnemyCol")
         {
-            hp -= 20;
+            hp = hp-15;
         }
     }
 }
