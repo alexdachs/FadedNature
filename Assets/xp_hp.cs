@@ -13,7 +13,7 @@ public class xp_hp : MonoBehaviour
     public float xp;
     private int startLvl = 1;
     public int lvl;
-    Rigidbody2D myRb2D;
+    
     
     
     
@@ -21,7 +21,7 @@ public class xp_hp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myRb2D.GetComponent<Rigidbody2D>();
+        
         hp = iniHp;
         lvl = startLvl;
         xp = 0;
@@ -55,16 +55,15 @@ public class xp_hp : MonoBehaviour
         
         if (collision.gameObject.tag == "BasicEnemy")
         {
-            
-            xp -= 10;
+            hp -= 10;
         }
         if (collision.gameObject.tag == "MediumEnemy")
         {
-            xp -= 15;
+            hp -= 15;
         }
         if (collision.gameObject.tag == "HardEnemy")
         {
-            xp -= 20;
+            hp -= 20;
         }
     }
 }
