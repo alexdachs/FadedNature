@@ -31,6 +31,10 @@ public class plant_enemy_1 : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
+        if (Vector2.Distance(transform.position, target.position) > 2)
+        {
+            //ATTACK
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
