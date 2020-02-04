@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class xp_hp : MonoBehaviour
 {
+    //UI
     public Text PlayerHp;
     public Text PlayerXp;
     public Text PlayerLvl;
+    //HP
     private int iniHp = 100;
     public int hp;
+    //XP
     public float xp;
+    //LVL
     private int startLvl = 1;
     public int lvl;
+    //ATK
+    public float AttackDmg;
     
     
     
@@ -21,7 +27,8 @@ public class xp_hp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //INIT PLAYER STATS
+        AttackDmg = 25f;
         hp = iniHp;
         lvl = startLvl;
         xp = 0;
@@ -30,8 +37,6 @@ public class xp_hp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
         //DIE
         if (hp <= 0)
         {
@@ -45,6 +50,7 @@ public class xp_hp : MonoBehaviour
             xp -= 100;
             lvl += 1;
         }
+        //SHOW IN SCREEN
         PlayerHp.GetComponent<Text>().text = hp.ToString();
         PlayerXp.GetComponent<Text>().text = xp.ToString();
         PlayerLvl.GetComponent<Text>().text = lvl.ToString();
