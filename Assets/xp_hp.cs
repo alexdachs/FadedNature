@@ -5,47 +5,66 @@ using UnityEngine.UI;
 
 public class xp_hp : MonoBehaviour
 {
-    public GameObject PlayerHp;
-    public GameObject PlayerXp;
+    public Text PlayerHp;
+    public Text PlayerXp;
+    public Text PlayerLvl;
+    private int iniHp = 100;
     public int hp;
     public float xp;
+    private int startLvl = 1;
     public int lvl;
-    private Rigidbody2D rb;
+    Rigidbody2D myRb2D;
     
-    void initPlayer()
-    {
-        hp = 100;
-        xp = 0;
-        lvl = 1;
-    }
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        initPlayer();
-
+        myRb2D.GetComponent<Rigidbody2D>();
+        hp = iniHp;
+        lvl = startLvl;
+        xp = 0;
     }
 
     // Update is called once per frame
     void Update()
-    {       
-        GameObject UiHp = PlayerHp;
-        int HpActual = hp;
-        /*colision
-        if ()
-        {
-            restar vida
-        }*/
+    {
 
-        if (hp <= 0 )
+        
+        //DIE
+        if (hp <= 0)
         {
-            //MORIR
+            
+            xp = 0;
+            Destroy(gameObject);
         }
+        //LVL UP
         if (xp >= 100)
         {
             xp -= 100;
             lvl += 1;
         }
-        UiHp.GetComponent<Text>().text = HpActual.ToString();
+        PlayerHp.GetComponent<Text>().text = hp.ToString();
+        PlayerXp.GetComponent<Text>().text = xp.ToString();
+        PlayerLvl.GetComponent<Text>().text = lvl.ToString();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //COLLISION WITH ENEMYS
+        
+        if (collision.gameObject.tag == "BasicEnemy")
+        {
+            
+            xp -= 10;
+        }
+        if (collision.gameObject.tag == "MediumEnemy")
+        {
+            xp -= 15;
+        }
+        if (collision.gameObject.tag == "HardEnemy")
+        {
+            xp -= 20;
+        }
     }
 }
