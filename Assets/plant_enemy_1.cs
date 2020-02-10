@@ -10,6 +10,7 @@ public class plant_enemy_1 : MonoBehaviour
     public int hp;
     //ATK
     private int AttackDmg;
+    public GameObject leaf;
     //SPEED
     public float speed;
     private Transform target;
@@ -29,11 +30,16 @@ public class plant_enemy_1 : MonoBehaviour
         //FOLLOW PLAYER
         if (Vector2.Distance(transform.position, target.position) > 1 && Vector2.Distance(transform.position, target.position) < 8)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            if(Vector2.Distance(new Vector2(0,transform.position.y), new Vector2(0,target.position.y)) < 2)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            }
+            
         }
-        if (Vector2.Distance(transform.position, target.position) > 2)
+        if (Vector2.Distance(transform.position, target.position) < 4)
         {
             //ATTACK
+            GameObject leafAttk = Instantiate(leaf, transform.position, Quaternion.identity);
         }
     }
 
