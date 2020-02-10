@@ -91,6 +91,10 @@ public class xp_hp : MonoBehaviour
         {
             hp = hp -5;
         }
+        if (collision.gameObject.tag == "leave_atk")
+        {
+            hp = hp - 15;
+        }
         if (collision.gameObject.tag == "MediumEnemyCol")
         {
             hp = hp-10;

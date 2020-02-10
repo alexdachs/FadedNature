@@ -9,7 +9,6 @@ public class plant_enemy_1 : MonoBehaviour
     private int iniHp = 100;
     public int hp;
     //ATK
-    private int AttackDmg;
     public GameObject leaf;
     //SPEED
     public float speed;
@@ -18,7 +17,7 @@ public class plant_enemy_1 : MonoBehaviour
     void Start()
     {
         //INIT ENEMY
-        AttackDmg = 25;
+        
         hp = iniHp;
         //GET PLAYER
         target = GameObject.FindGameObjectWithTag("MainChar").GetComponent<Transform>();
