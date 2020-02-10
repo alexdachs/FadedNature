@@ -2,89 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dash : MonoBehaviour
+public class Dash : MonoBehaviour
 {
 
-    public Rigidbody2D rigidBody2D;
-    public float speed, delay, delayPress;
-    public bool startDelay;
-    public int rigthPress, leftPress;
-    public float timePassed, timePassedPress;
-    public bool startTimer;
+    public float dash = 3000f;
+    public bool CanIDash = true;
+    public float time = 5.0f;
 
-
-
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
-        rigidBody2D = GetComponent<Rigidbody2D>();
-        rigthPress = 0;
-        leftPress = 0;
+       
+    }
+    void Dashear()
+    {
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(dash, 0), ForceMode2D.Force);
+        CanIDash = false;
+        time = 0.0f;
+        if (time == 5.0f)
+        {
+            CanIDash = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("left"))
+        if (Input.GetButtonDown("Fire1") && CanIDash == true)
         {
-            leftPress++;
-            startTimer = true;
-
-
-        }
-        else if (Input.GetButtonDown("right"))
-        {
-            rigthPress++;
-            startTimer = true;
-        }
-
-        if (startTimer)
-        {
-            timePassedPress += Time.deltaTime;
-            if (timePassedPress >= delayPress)
-            {
-                startTimer = false;
-                leftPress = 0;
-                rigthPress = 0;
-            }
-        }
-        if (leftPress >= 2 || rigthPress >= 2)
-        {
-            startDelay = true;
-
-        }
-
-    }
-    void FixedUpdate()
-    {
-        if (startDelay)
-        {
-            timePassed += Time.fixedDeltaTime;
-            if (timePassed <= delay)
-            {
-                if (rigthPress >= 2)
-                {
-                    rigidBody2D.velocity = new Vector2(speed, rigidBody2D.velocity.y);
-                    rigthPress = 0;
-                }
-                else if (leftPress >= 2)
-                {
-                    rigidBody2D.velocity = new Vector2(-speed, rigidBody2D.velocity.y);
-                      
-                    else 
-                    {
-                        timePassed = 0;
-                        startDelay = false;
-                        rigthPress = 0;
-                        leftPress = 0;
-                    }
-                }
-            }
+            Dashear();
+          
         }
     }
+   
 }
-    
 
-
-    
 
