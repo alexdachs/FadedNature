@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: e510188bf4bbace4290cf572b343ad62
+  productGUID: 152c482265a0b46408d5206e05057511
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: plantilla
+  productName: 1a camara
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -587,10 +587,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: e447f0b2-b753-4c5c-9003-cce8685077b2
+  cloudProjectId: deab8445-0890-4269-a495-495bd86dddea
   framebufferDepthMemorylessMode: 0
-  projectName: plantilla
-  organizationId: unity_ntujhyhf1oua0a
+  projectName: 1a camara
+  organizationId: albertojudezperez
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
