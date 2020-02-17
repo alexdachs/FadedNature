@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class xp_hp : MonoBehaviour
 {
     //UI
-    public Text PlayerHp;
+    public Scrollbar PlayerHp;
     public Text PlayerXp;
     public Text PlayerLvl;
     //HP
@@ -53,7 +53,7 @@ public class xp_hp : MonoBehaviour
             lvl += 1;
         }
         //SHOW IN SCREEN
-        PlayerHp.GetComponent<Text>().text = hp.ToString();
+        PlayerHp.size = hp/100f;
         PlayerXp.GetComponent<Text>().text = xp.ToString();
         PlayerLvl.GetComponent<Text>().text = lvl.ToString();
     }
@@ -74,13 +74,6 @@ public class xp_hp : MonoBehaviour
         {
             hp = hp - 15;
         }
-        if (collision.gameObject.tag == "MediumEnemyCol")
-        {
-            hp = hp-10;
-        }
-        if (collision.gameObject.tag == "HardEnemyCol")
-        {
-            hp = hp-15;
-        }
+        
     }
 }
