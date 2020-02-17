@@ -10,6 +10,9 @@ public class plant_enemy_1 : MonoBehaviour
     public int hp;
     //ATK
     public GameObject leaf;
+    static float delay = 1.5f;
+    private float attackTimer = delay;
+    
     //SPEED
     public float speed;
     private Transform target;
@@ -32,21 +35,34 @@ public class plant_enemy_1 : MonoBehaviour
         //FOLLOW PLAYER
         if (Vector2.Distance(transform.position, target.position) > 1 && Vector2.Distance(transform.position, target.position) < 8)
         {
-            if(Vector2.Distance(new Vector2(0,transform.position.y), new Vector2(0,target.position.y)) < 1.5f)
+            if(Vector2.Distance(new Vector2(0,transform.position.y), new Vector2(0,target.position.y)) <= 0.5f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             }
             
         }
         //ATTACK
-        if (Vector2.Distance(transform.position, target.position) < 4)
+       
+        if(attackTimer > 0)
         {
-            if (Vector2.Distance(new Vector2(0, transform.position.y), new Vector2(0, target.position.y)) < 0.5f)
+            attackTimer -= Time.deltaTime;
+        }
+        if (Vector2.Distance(transform.position, target.position) < 6 && Vector2.Distance(new Vector2(0, transform.position.y), new Vector2(0, target.position.y)) < 1f && attackTimer <= 0)
+        {
+           if(target.position.x > transform.position.x)
             {
-                
-                GameObject leafAttk = Instantiate(leaf, transform.position, Quaternion.identity);
-                leafAttk.GetComponent<Rigidbody2D>().AddForce(transform.right * 100);
+                GameObject leafAttk = Instantiate(leaf, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+                leafAttk.GetComponent<Rigidbody2D>().AddForce(transform.right * 5000);
+                attackTimer = delay;
             }
+           if (target.position.x < transform.position.x)
+            {
+                GameObject leafAttk = Instantiate(leaf, new Vector3(transform.position.x - 1, transform.position.y, transform.position.z), Quaternion.identity);
+                leafAttk.GetComponent<Rigidbody2D>().AddForce(transform.right * -5000);
+                attackTimer = delay;
+            }
+
+
         }
     }
 

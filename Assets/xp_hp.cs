@@ -19,10 +19,8 @@ public class xp_hp : MonoBehaviour
     public int lvl;
     //ATK
     public int AttackDmg;
-    //JUMP
-    public float JumpForce = 1f;
-    public bool PuedoSaltar = false;
     
+   
 
 
 
