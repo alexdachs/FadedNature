@@ -2,39 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dash : MonoBehaviour
+public class dash : MonoBehaviour
 {
 
-    public float dash = 3000f;
-    public bool CanIDash = true;
-    public float time = 5.0f;
+    public float force = 3000f;
+
+
 
     // Use this for initialization
     void Start()
     {
-       
-    }
-    void Dashear()
-    {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(dash, 0), ForceMode2D.Force);
-        CanIDash = false;
-        time = 0.0f;
-        if (time == 5.0f)
-        {
-            CanIDash = true;
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && CanIDash == true)
+
         {
-            Dashear();
-          
+            if (Input.GetButtonDown("Fire1") && Input.GetKey("a"))
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+
+            }
+            else if (Input.GetButtonDown("Fire1") && Input.GetKey("d"))
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
+
+            }
         }
     }
-   
 }
 
 

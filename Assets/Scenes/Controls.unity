@@ -123,9 +123,9 @@ GameObject:
   - component: {fileID: 362270588}
   - component: {fileID: 362270587}
   - component: {fileID: 362270586}
-  - component: {fileID: 362270589}
   - component: {fileID: 362270590}
   - component: {fileID: 362270585}
+  - component: {fileID: 362270589}
   - component: {fileID: 362270591}
   m_Layer: 0
   m_Name: Personaje
@@ -252,10 +252,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 362270584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 944fd20939ab23044ab3b13456fa6d41, type: 3}
+  m_Script: {fileID: 11500000, guid: 69bd5a0d3914c1d47b78ad3668fd92b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 10
+  JumpForce: 5
   PuedoSaltar: 0
 --- !u!114 &362270590
 MonoBehaviour:
@@ -279,11 +279,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 362270584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bced1deb9dd9cd49be5a3c90edaa076, type: 3}
+  m_Script: {fileID: 11500000, guid: a50c1e7ca782aca4c83cf6f3c56a42b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody2D: {fileID: 362270586}
-  MaxSpeed: 15
+  force: 100
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +377,7 @@ GameObject:
   - component: {fileID: 1116714556}
   - component: {fileID: 1116714555}
   - component: {fileID: 1116714554}
+  - component: {fileID: 1116714558}
   m_Layer: 0
   m_Name: Suelo
   m_TagString: suelo
@@ -494,3 +494,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1116714558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116714553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bd5a0d3914c1d47b78ad3668fd92b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpForce: 1
+  PuedoSaltar: 0
