@@ -17,8 +17,7 @@ public class xp_hp : MonoBehaviour
     //LVL
     private int startLvl = 1;
     public int lvl;
-    //ATK
-    public int AttackDmg;
+    
     
    
 
@@ -29,7 +28,6 @@ public class xp_hp : MonoBehaviour
     {
         
         //INIT PLAYER STATS
-        AttackDmg = 25;
         hp = iniHp;
         lvl = startLvl;
         xp = 0;

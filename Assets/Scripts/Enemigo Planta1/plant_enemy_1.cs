@@ -20,8 +20,7 @@ public class plant_enemy_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //INIT ENEMY
-        
+        //INIT ENEMY        
         hp = iniHp;
         //GET PLAYER
         target = GameObject.FindGameObjectWithTag("MainChar").GetComponent<Transform>();
@@ -64,15 +63,18 @@ public class plant_enemy_1 : MonoBehaviour
 
 
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+        //DIE
+        if(hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+    public void TakeDamage(int damage)
     {
-        ////(Recibe Ataque jugador)
-        //if (collision.gameObject.tag == "")
-        //{
-        //    hp -= 10;
-        //}
+        hp -= damage;
+        Debug.Log("Daaam age taken");
     }
     
 }

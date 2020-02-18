@@ -4,22 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Suelo
   - suelo
   - BasicEnemyCol
   - MainChar
-  - Floor
   - leave_atk
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
+  - 
   - Water
   - UI
-  - suelo
-  - BasicEnemyCol
-  - Player
+  - 
+  - 
   - Floor
+  - Enemy
+  - MainChar
   - 
   - 
   - 

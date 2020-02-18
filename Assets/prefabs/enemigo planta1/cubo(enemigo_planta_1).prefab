@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8093537294831104506
+--- !u!1 &5379991846374134932
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8093537294831104502}
-  - component: {fileID: 8093537294831104505}
-  - component: {fileID: 8093537294831104504}
-  - component: {fileID: 8093537294831104503}
-  - component: {fileID: 8093537294831104507}
-  - component: {fileID: 4683497175818084905}
-  - component: {fileID: 1136866336036163621}
-  - component: {fileID: 5097837957915217011}
-  m_Layer: 0
-  m_Name: personaje
-  m_TagString: Untagged
+  - component: {fileID: 2604551247869723140}
+  - component: {fileID: 2714355595452452947}
+  - component: {fileID: 8841967374556576407}
+  - component: {fileID: 8841967374556576406}
+  - component: {fileID: 8841967374556576401}
+  m_Layer: 9
+  m_Name: cubo(enemigo_planta_1)
+  m_TagString: BasicEnemyCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8093537294831104502
+--- !u!4 &2604551247869723140
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
+  m_GameObject: {fileID: 5379991846374134932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.61, y: 4.67, z: 0}
-  m_LocalScale: {x: 1, y: 0.243, z: 1}
+  m_LocalPosition: {x: -7.26, y: -2.24, z: -1}
+  m_LocalScale: {x: 1.25097, y: 1.0792, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8093537294831104505
+--- !u!212 &2714355595452452947
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
+  m_GameObject: {fileID: 5379991846374134932}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,45 +71,45 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 09e5d3dbd381fd045aafaf08282abef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af1246a4c68dbe7418dba1454566d419, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.52, y: 1.98}
+  m_Size: {x: 1.02, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &8093537294831104504
+--- !u!50 &8841967374556576407
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
+  m_GameObject: {fileID: 5379991846374134932}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 250
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 25
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &8093537294831104503
+  m_Constraints: 4
+--- !u!61 &8841967374556576406
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
+  m_GameObject: {fileID: 5379991846374134932}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -123,71 +120,27 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.52, y: 1.98}
-    newSize: {x: 0.52, y: 1.98}
+    oldSize: {x: 1.02, y: 1.02}
+    newSize: {x: 1.02, y: 1.02}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.52, y: 1.98}
+  m_Size: {x: 1.02, y: 1.02}
   m_EdgeRadius: 0
---- !u!114 &8093537294831104507
+--- !u!114 &8841967374556576401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
+  m_GameObject: {fileID: 5379991846374134932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 727bb5aa0ddce34429eeab3610be4939, type: 3}
+  m_Script: {fileID: 11500000, guid: 56fcd0964abaa21439c3985de2145071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 5
---- !u!114 &4683497175818084905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7318a238c44e4244b3bb870331c940d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHp: {fileID: 0}
-  PlayerXp: {fileID: 0}
-  PlayerLvl: {fileID: 0}
-  hp: 0
-  xp: 0
-  lvl: 0
-  AttackDmg: 0
---- !u!114 &1136866336036163621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bd5a0d3914c1d47b78ad3668fd92b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JumpForce: 1
-  PuedoSaltar: 0
---- !u!114 &5097837957915217011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093537294831104506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50c1e7ca782aca4c83cf6f3c56a42b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 3000
+  hp: 100
+  leaf: {fileID: 6921892723804720066, guid: c5fc5802da11d1a408dc266e1fd86b24, type: 3}
+  speed: 4
