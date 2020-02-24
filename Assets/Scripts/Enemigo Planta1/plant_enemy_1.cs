@@ -74,7 +74,7 @@ public class plant_enemy_1 : MonoBehaviour
     public void TakeDamage(int damage)
     {
         hp -= damage;
-        Debug.Log("Daaam age taken");
+        Debug.Log("Daaamage taken");
     }
     
 }

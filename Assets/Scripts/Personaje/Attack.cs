@@ -47,10 +47,10 @@ public class Attack : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPosLeft.position, attackRange);
-        Gizmos.DrawWireSphere(attackPosRight.position, attackRange);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(attackPosLeft.position, attackRange);
+    //    Gizmos.DrawWireSphere(attackPosRight.position, attackRange);
+    //}
 }
