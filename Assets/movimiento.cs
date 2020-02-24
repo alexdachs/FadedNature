@@ -5,7 +5,7 @@ using UnityEngine;
 public class movimiento : MonoBehaviour
 {
     private Rigidbody2D body;
-    public float MaxSpeed = 15f;
+    public float MaxSpeed = 8f;
     // Start is called before the first frame update
     void Start()
     {

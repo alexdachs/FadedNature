@@ -8,6 +8,7 @@ TagManager:
   - BasicEnemyCol
   - MainChar
   - leave_atk
+  - Hola
   layers:
   - Default
   - TransparentFX
