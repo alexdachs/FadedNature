@@ -1525,10 +1525,20 @@ PrefabInstance:
       propertyPath: PlayerLvl
       value: 
       objectReference: {fileID: 2117430417}
+    - target: {fileID: 4712144140943439274, guid: f289d92035546894699a13a01e501511,
+        type: 3}
+      propertyPath: hp
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7600354446499943756, guid: f289d92035546894699a13a01e501511,
         type: 3}
       propertyPath: damage
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600354446499943756, guid: f289d92035546894699a13a01e501511,
+        type: 3}
+      propertyPath: timeAttack
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f289d92035546894699a13a01e501511, type: 3}
@@ -1607,7 +1617,7 @@ PrefabInstance:
     - target: {fileID: 8841967374556576401, guid: 6fd9f7146e99aff45b7f1f8b85d43e18,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fd9f7146e99aff45b7f1f8b85d43e18, type: 3}
