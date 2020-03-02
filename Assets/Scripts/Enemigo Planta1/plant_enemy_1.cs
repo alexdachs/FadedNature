@@ -12,7 +12,7 @@ public class plant_enemy_1 : MonoBehaviour
     public GameObject leaf;
     static float delay = 2f;
     private float attackTimer = delay;
-    
+    bool isAttack = false;
     //SPEED
     public float speed;
     private Transform target;
@@ -30,9 +30,9 @@ public class plant_enemy_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                
+
         //FOLLOW PLAYER
-        if (Vector2.Distance(transform.position, target.position) > 1 && Vector2.Distance(transform.position, target.position) < 8)
+        if (Vector2.Distance(transform.position, target.position) > 1 && Vector2.Distance(transform.position, target.position) < 8 && isAttack == false)
         {
             if(Vector2.Distance(new Vector2(0,transform.position.y), new Vector2(0,target.position.y)) <= 0.5f)
             {
@@ -49,8 +49,10 @@ public class plant_enemy_1 : MonoBehaviour
         }
         if (Vector2.Distance(transform.position, target.position) < 6 && Vector2.Distance(new Vector2(0, transform.position.y), new Vector2(0, target.position.y)) < 1f && attackTimer <= 0)
         {
-           if(target.position.x > transform.position.x)
+            isAttack = true;
+            if (target.position.x > transform.position.x)
             {
+                
                 GameObject leafAttk = Instantiate(leaf, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
                 leafAttk.GetComponent<Rigidbody2D>().AddForce(transform.right * 5000);
                 attackTimer = delay;
