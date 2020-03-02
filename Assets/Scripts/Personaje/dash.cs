@@ -7,10 +7,10 @@ public class dash : MonoBehaviour
 {
 
     public float force = 40000f;
-   
-   
+
+
     public Rigidbody2D rigidBody2D;
-   
+
 
 
 
@@ -25,28 +25,29 @@ public class dash : MonoBehaviour
     {
         Dash();
 
-      
-    void Dash()
-    {
-        if (Input.GetButtonDown("Fire1") && Input.GetKey("a"))
+
+        void Dash()
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+            if (Input.GetButtonDown("Fire1") && Input.GetKey("a"))
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
 
-            
 
 
+
+
+            }
+            else if (Input.GetButtonDown("Fire1") && Input.GetKey("d"))
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
+
+
+            }
 
         }
-        else if (Input.GetButtonDown("Fire1") && Input.GetKey("d"))
-        {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
-            
 
-        }
-        
+
     }
-
-   
 }
 
 

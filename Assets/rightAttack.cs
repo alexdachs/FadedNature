@@ -36,15 +36,14 @@ public class rightAttack : MonoBehaviour
     {
         micollider2d.enabled = false;
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.gameObject.tag == "BasicEnemyCol")
+        if ( collision.gameObject.tag == "BasicEnemyCol")
         {
-            other.GetComponent<plant_enemy_1>().TakeDamage(damage);
+            collision.GetComponent<plant_enemy_1>().TakeDamage(damage);
         }
-        
     }
+    
 
 }
 

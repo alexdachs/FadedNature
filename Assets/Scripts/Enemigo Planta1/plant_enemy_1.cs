@@ -10,7 +10,7 @@ public class plant_enemy_1 : MonoBehaviour
     public int hp;
     //ATK
     public GameObject leaf;
-    static float delay = 1.5f;
+    static float delay = 2f;
     private float attackTimer = delay;
     
     //SPEED
@@ -42,6 +42,7 @@ public class plant_enemy_1 : MonoBehaviour
         }
         //ATTACK
        
+        
         if(attackTimer > 0)
         {
             attackTimer -= Time.deltaTime;
@@ -63,7 +64,7 @@ public class plant_enemy_1 : MonoBehaviour
 
 
         }
-
+        
         //DIE
         if(hp <= 0)
         {
