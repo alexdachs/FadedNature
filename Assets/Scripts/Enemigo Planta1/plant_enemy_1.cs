@@ -16,7 +16,8 @@ public class plant_enemy_1 : MonoBehaviour
     //SPEED
     public float speed;
     private Transform target;
-    
+    public GameObject potion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +72,15 @@ public class plant_enemy_1 : MonoBehaviour
         if(hp <= 0)
         {
             Destroy(gameObject);
+            float rand = Random.Range(0.0f, 1.0f);
+            if (rand < 0.5)
+            {
+                Instantiate(potion, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            }
+            else
+            {
+
+            }
         }
     }
     

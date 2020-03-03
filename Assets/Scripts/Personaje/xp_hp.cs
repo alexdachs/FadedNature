@@ -72,6 +72,11 @@ public class xp_hp : MonoBehaviour
         {
             hp = hp - 15;
         }
-        
+        if (collision.gameObject.tag == "Potion")
+        {
+            hp = hp + 10;
+            Destroy(collision.gameObject);
+        }
+
     }
 }

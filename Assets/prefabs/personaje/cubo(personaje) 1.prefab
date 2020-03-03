@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4712144140943439274}
   - component: {fileID: 4712144140943439273}
   - component: {fileID: 4712144140943439286}
+  - component: {fileID: 2638635815563439208}
   - component: {fileID: 4712144140943439287}
   m_Layer: 9
   m_Name: cubo(personaje) 1
@@ -252,6 +253,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 15
+--- !u!114 &2638635815563439208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176723072334090162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612c8ed78ec04214dbae9e61edf5c16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 2
+  damage: 100
+  timeAttack: 0
+  micollider2d: {fileID: 0}
 --- !u!114 &4712144140943439287
 MonoBehaviour:
   m_ObjectHideFlags: 0

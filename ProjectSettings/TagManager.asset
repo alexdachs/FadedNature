@@ -9,6 +9,8 @@ TagManager:
   - MainChar
   - leave_atk
   - Hola
+  - Potion
+  - Suelo
   layers:
   - Default
   - TransparentFX
