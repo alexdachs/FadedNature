@@ -23,7 +23,7 @@ public class options : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    void ChangeRes1() { Screen.SetResolution(800, 600,true); }
+    void ChangeRes1() { Screen.SetResolution(800, 600, true); }
     void ChangeRes2() { Screen.SetResolution(1024, 768, true); }
     void ChangeRes3() { Screen.SetResolution(1280, 800, true); }
     void ChangeRes4() { Screen.SetResolution(1920, 1080, true); }

@@ -9,6 +9,7 @@ public class Patrulla : MonoBehaviour
     public Transform[] puntos;
     public Transform[] puntosReverse;
     private int DestinationPoint = 0;
+    private int DestinationPointReverse = 0;
     public float speed = 1;
     bool patrulla = true;
     bool reverse = false;
@@ -30,7 +31,7 @@ public class Patrulla : MonoBehaviour
         }
         if (reverse)
         {
-            transform.position = Vector2.MoveTowards(transform.position, puntosReverse[DestinationPoint].position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, puntosReverse[DestinationPointReverse].position, speed * Time.deltaTime);
         }
        
         
@@ -42,18 +43,25 @@ public class Patrulla : MonoBehaviour
         {
             NextPoint();
         }
-        if (Vector3.Distance(transform.position, puntos[DestinationPoint].position) < 0.5f && DestinationPoint != puntos.Length )
+        if (Vector3.Distance(transform.position, puntos[DestinationPoint].position) < 0.5f && DestinationPoint != puntos.Length && reverse == false)
         {
             DestinationPoint += 1;
         }
-        if(DestinationPoint == puntos.Length)
+        if (Vector3.Distance(transform.position, puntosReverse[DestinationPointReverse].position) < 0.5f && DestinationPointReverse != puntosReverse.Length && reverse == true)
         {
-            DestinationPoint = 1;
+            DestinationPointReverse += 1;
+        }
+
+        if (DestinationPoint == puntos.Length)
+        {
+            DestinationPointReverse = 1;
+            DestinationPoint = 0;
             reverse = true;
         }
-        if(DestinationPoint == puntosReverse.Length)
+        if(DestinationPointReverse == puntosReverse.Length)
         {
             DestinationPoint = 1;
+            DestinationPointReverse = 0;
             reverse = false;
         }
     }
