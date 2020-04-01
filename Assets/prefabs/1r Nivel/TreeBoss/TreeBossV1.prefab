@@ -41,7 +41,7 @@ BoxCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.43561172, y: 0.13756084}
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 6176301200103443975, guid: cdc9160614f21254086ff5c17bd8a4c6,
         type: 3}
       propertyPath: m_Name
-      value: arbol boss
+      value: TreeBossV1
       objectReference: {fileID: 0}
     - target: {fileID: 6176301200103443973, guid: cdc9160614f21254086ff5c17bd8a4c6,
         type: 3}
