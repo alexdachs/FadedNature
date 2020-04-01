@@ -21,5 +21,9 @@ public class leafAttk : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Suelo")
+        {
+            Destroy(gameObject);
+        }
     }
 }

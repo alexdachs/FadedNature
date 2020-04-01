@@ -84,10 +84,9 @@ public class plant_enemy_1 : MonoBehaviour
         }
     }
     
-    public void TakeDamage(int damage)
+    public void TakeDamage(int _damage)
     {
-        hp -= damage;
-        Debug.Log("Daaamage taken");
+        hp -= _damage;
     }
     
 }

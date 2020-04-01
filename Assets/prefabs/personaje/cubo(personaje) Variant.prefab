@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8176723072334090162, guid: f289d92035546894699a13a01e501511,
+        type: 3}
+      propertyPath: m_Name
+      value: cubo(personaje) Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 2302788380691618082, guid: f289d92035546894699a13a01e501511,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,6 +87,11 @@ PrefabInstance:
       propertyPath: hp
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2968653463233473069, guid: f289d92035546894699a13a01e501511,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7600354446499943756, guid: f289d92035546894699a13a01e501511,
         type: 3}
       propertyPath: damage
@@ -91,11 +101,6 @@ PrefabInstance:
         type: 3}
       propertyPath: timeAttack
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8176723072334090162, guid: f289d92035546894699a13a01e501511,
-        type: 3}
-      propertyPath: m_Name
-      value: cubo(personaje)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f289d92035546894699a13a01e501511, type: 3}

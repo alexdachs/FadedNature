@@ -79,4 +79,9 @@ public class xp_hp : MonoBehaviour
         }
 
     }
+
+    public void TakeDamage(int _damage)
+    {
+        hp -= _damage;
+    }
 }
