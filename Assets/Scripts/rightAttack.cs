@@ -42,6 +42,10 @@ public class rightAttack : MonoBehaviour
         {
             collision.GetComponent<plant_enemy_1>().TakeDamage(damage);
         }
+        if (collision.gameObject.tag == "Boss")
+        {
+            collision.GetComponent<Tree_boss>().TakeDamage(damage);
+        }
     }
     
 
