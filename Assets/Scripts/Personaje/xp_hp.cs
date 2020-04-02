@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class xp_hp : MonoBehaviour
 {
     //UI
-    public Scrollbar PlayerHp;
-    public Text PlayerXp;
-    public Text PlayerLvl;
+    //public Scrollbar PlayerHp;
+   // public Text PlayerXp;
+   // public Text PlayerLvl;
     //HP
     private int iniHp = 100;
     public int hp;
@@ -51,9 +51,9 @@ public class xp_hp : MonoBehaviour
             lvl += 1;
         }
         //SHOW IN SCREEN
-        PlayerHp.size = hp/100f;
-        PlayerXp.GetComponent<Text>().text = xp.ToString();
-        PlayerLvl.GetComponent<Text>().text = lvl.ToString();
+       // PlayerHp.size = hp/100f;
+       // PlayerXp.GetComponent<Text>().text = xp.ToString();
+       // PlayerLvl.GetComponent<Text>().text = lvl.ToString();
     }
 
    

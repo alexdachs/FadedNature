@@ -7,9 +7,9 @@ public class RespawnTutorial : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "MainChar")
         {
-            SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("Level1");
 
         }
     }
