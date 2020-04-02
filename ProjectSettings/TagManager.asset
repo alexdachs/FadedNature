@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - suelo
   - BasicEnemyCol
   - MainChar
   - leave_atk
   - Hola
   - Potion
   - Suelo
+  - Attack
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CamaraFollow : MonoBehaviour
 {
     [SerializeField]
 
@@ -10,6 +10,9 @@ public class CameraFollow : MonoBehaviour
 
     [SerializeField]
     float timeOffset;
+
+    [SerializeField]
+    Vector2 posOffset;
 
     [SerializeField]
     float LimiteRight;
@@ -23,26 +26,28 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     float LimiteDown;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    Vector3 startPos;
+    Vector3 endPos;
     // Update is called once per frame
     void Update()
     {
-        Vector3 startPos = transform.position;
-        Vector3 endPos = personaje.transform.position;
+        //posicion de la camara
+        startPos = transform.position;
+
+        //posicion de megaman
+        endPos = personaje.transform.position;
+
+        endPos.x += posOffset.x;
+        endPos.y += posOffset.y;
         endPos.z = -20;
-     
+
         transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
 
-        transform.position = new Vector3
+       /* transform.position = new Vector3
         (
             Mathf.Clamp(transform.position.x, LimiteLeft, LimiteRight),
             Mathf.Clamp(transform.position.x, LimiteDown, LimiteUp),
-            transform.position.z
-        );
+                transform.position.z
+        );*/
     }
 }
