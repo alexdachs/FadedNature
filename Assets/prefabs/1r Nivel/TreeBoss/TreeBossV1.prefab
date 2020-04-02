@@ -161,6 +161,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6176301200103443972, guid: cdc9160614f21254086ff5c17bd8a4c6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ea14609d9d5fb7469db35037b79bec3,
+        type: 3}
     - target: {fileID: 6176301200103443971, guid: cdc9160614f21254086ff5c17bd8a4c6,
         type: 3}
       propertyPath: m_Mass

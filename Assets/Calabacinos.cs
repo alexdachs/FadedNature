@@ -22,7 +22,7 @@ public class Calabacinos : MonoBehaviour
     void Start()
     {
         Spot = Random.Range(0, ArrayPos.Length);
-
+        Health = 100;
     }
 
     // Update is called once per frame
@@ -42,17 +42,18 @@ public class Calabacinos : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-
-
-    }
-    private void OnTriggerEnter2D(Collider2D laser)
-    {
-        if (laser.CompareTag("Attack"))
+        if(Health <= 0)
         {
-            Destroy(laser.gameObject);
-            Health = Health - 1;
+            Destroy(gameObject);
         }
 
+    }
+  
+
+
+    public void TakeDamage(int _damage)
+    {
+        Health -= _damage;
     }
 
 }

@@ -11,6 +11,12 @@ TagManager:
   - Potion
   - Suelo
   - Attack
+  - suelo
+  - Boss
+  - Bat
+  - Calabacin
+  - LostSoul
+  - TriggerActivate
   layers:
   - Default
   - TransparentFX

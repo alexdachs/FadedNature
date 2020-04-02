@@ -38,9 +38,17 @@ public class rightAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ( collision.gameObject.tag == "BasicEnemyCol")
+        if ( collision.gameObject.tag == "Bat")
         {
-            collision.GetComponent<plant_enemy_1>().TakeDamage(damage);
+            collision.GetComponent<Patrulla>().TakeDamage(damage);
+        }
+        if (collision.gameObject.tag == "LostSoul")
+        {
+            collision.GetComponent<LostSoul>().TakeDamage(damage);
+        }
+        if (collision.gameObject.tag == "Calabacin")
+        {
+            collision.GetComponent<Calabacinos>().TakeDamage(damage);
         }
         if (collision.gameObject.tag == "Boss")
         {

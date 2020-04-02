@@ -13,10 +13,12 @@ public class Patrulla : MonoBehaviour
     public float speed = 1;
     bool patrulla = true;
     bool reverse = false;
+    int hp;
     
     // Start is called before the first frame update
     void Start()
-    {        
+    {
+        hp = 70;
         NextPoint();
     }
     void NextPoint()
@@ -64,5 +66,14 @@ public class Patrulla : MonoBehaviour
             DestinationPointReverse = 0;
             reverse = false;
         }
+        if(hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(int _damage)
+    {
+        hp -= _damage;
     }
 }

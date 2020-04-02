@@ -7,7 +7,7 @@ public class LostSoul : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 direction;
     public float speed;
-
+    int hp;
 
     public Transform player;
 
@@ -16,12 +16,15 @@ public class LostSoul : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("MainChar").transform;
-
+        hp = 100;
     }
 
     void Update()
     {
-
+        if (hp <= 100)
+        {
+            Destroy(gameObject);
+        }
 
     }
 
@@ -34,6 +37,10 @@ public class LostSoul : MonoBehaviour
     }
 
 
+    public void TakeDamage(int _damage)
+    {
+        hp -= _damage;
+    }
 
 }
 

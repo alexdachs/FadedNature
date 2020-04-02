@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tree_boss : MonoBehaviour
 {
@@ -42,7 +43,8 @@ public class Tree_boss : MonoBehaviour
         //DIE
         if (hp <= 0)
         {
-            Destroy(gameObject);
+           Destroy(gameObject);
+            SceneManager.LoadScene("ToBeContinued");
         }
         //MELE
         if(Vector2.Distance(transform.position,target.transform.position) < 3)
