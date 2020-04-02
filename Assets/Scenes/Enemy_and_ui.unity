@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 735662577}
   - component: {fileID: 735662581}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasPause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,11 +3228,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3578672432425713960, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6169391849452665279, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
         type: 3}
       propertyPath: PlayerHp
@@ -3248,6 +3243,11 @@ PrefabInstance:
       propertyPath: PlayerLvl
       value: 
       objectReference: {fileID: 2117430417}
+    - target: {fileID: 3578672432425713960, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c86c2474b4a2e46a0ba239ac0f3763, type: 3}
 --- !u!1001 &8192363100210838943
