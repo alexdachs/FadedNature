@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivationCal : MonoBehaviour
+public class ActivacionBoss : MonoBehaviour
 {
     SpriteRenderer spr_render;
-    Calabacinos controller;
+    Tree_boss controller;
     // Start is called before the first frame update
     void Start()
     {
         spr_render = GetComponent<SpriteRenderer>();
-        controller = GetComponent<Calabacinos>();
+        controller = GetComponent<Tree_boss>();
         spr_render.enabled = false;
         controller.enabled = false;
     }
