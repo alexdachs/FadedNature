@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class xp_hp : MonoBehaviour
@@ -12,6 +13,7 @@ public class xp_hp : MonoBehaviour
     //HP
     private int iniHp = 100;
     public int hp;
+    bool puedoMorir = true;
     //XP
     public float xp;
     //LVL
@@ -36,13 +38,18 @@ public class xp_hp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            puedoMorir = false;
+            hp = 10000000;
+        }
         //DIE
-        if (hp <= 0)
+        if (hp <= 0 && puedoMorir == true)
         {
             //TO DO: RESPAWN MENU
             xp = 0;
             Destroy(gameObject);
+            SceneManager.LoadScene("Defeated");
         }
         //LVL UP
         if (xp >= 100)
@@ -93,4 +100,6 @@ public class xp_hp : MonoBehaviour
     {
         hp -= _damage;
     }
+
+
 }
