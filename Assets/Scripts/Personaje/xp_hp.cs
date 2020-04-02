@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class xp_hp : MonoBehaviour
 {
     //UI
-    //public Scrollbar PlayerHp;
+    public Scrollbar PlayerHp;
    // public Text PlayerXp;
    // public Text PlayerLvl;
     //HP
@@ -51,7 +51,7 @@ public class xp_hp : MonoBehaviour
             lvl += 1;
         }
         //SHOW IN SCREEN
-       // PlayerHp.size = hp/100f;
+       PlayerHp.size = hp/100f;
        // PlayerXp.GetComponent<Text>().text = xp.ToString();
        // PlayerLvl.GetComponent<Text>().text = lvl.ToString();
     }
@@ -61,13 +61,22 @@ public class xp_hp : MonoBehaviour
     //COLLISIONS
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
+
         //COLLISION WITH ENEMYS
 
-        if (collision.gameObject.tag == "BasicEnemyCol")
+        if (collision.gameObject.tag == "Calabacin")
         {
-            hp = hp -5;
+            hp = hp - 2;
         }
+        if (collision.gameObject.tag == "Bat")
+        {
+            hp = hp - 2;
+        }
+        if (collision.gameObject.tag == "LostSoul")
+        {
+            hp = hp - 5;
+        }
+
         if (collision.gameObject.tag == "leave_atk")
         {
             hp = hp - 15;
