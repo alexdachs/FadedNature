@@ -4862,7 +4862,7 @@ GameObject:
   - component: {fileID: 638900776}
   m_Layer: 0
   m_Name: env_ground_7 (2)
-  m_TagString: suelo
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6987,7 +6987,7 @@ GameObject:
   - component: {fileID: 865045994}
   m_Layer: 0
   m_Name: env_ground_7 (16)
-  m_TagString: suelo
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8867,7 +8867,7 @@ GameObject:
   - component: {fileID: 1154080830}
   m_Layer: 0
   m_Name: env_rock_3
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14461,7 +14461,7 @@ GameObject:
   - component: {fileID: 1915813107}
   m_Layer: 0
   m_Name: env_ground_7 (1)
-  m_TagString: suelo
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16339,7 +16339,7 @@ GameObject:
   - component: {fileID: 2127575465}
   m_Layer: 0
   m_Name: env_ground_7 (3)
-  m_TagString: suelo
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
