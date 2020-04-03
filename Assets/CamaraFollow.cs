@@ -43,11 +43,16 @@ public class CamaraFollow : MonoBehaviour
 
         transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
 
-       /* transform.position = new Vector3
-        (
-            Mathf.Clamp(transform.position.x, LimiteLeft, LimiteRight),
-            Mathf.Clamp(transform.position.x, LimiteDown, LimiteUp),
-                transform.position.z
-        );*/
+        if(transform.position.y <= -95)
+        {
+            transform.position = new Vector3 (transform.position.x,-100,transform.position.z);
+        }
+
+        //transform.position = new Vector3
+        //(
+        //    Mathf.Clamp(transform.position.x, LimiteLeft, LimiteRight),
+        //    Mathf.Clamp(transform.position.x, LimiteDown, LimiteUp),
+        //        transform.position.z
+        //);
     }
 }

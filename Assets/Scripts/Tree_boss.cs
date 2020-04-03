@@ -78,6 +78,7 @@ public class Tree_boss : MonoBehaviour
                 {
                     GameObject poisonBuble = Instantiate(buble, aparicionHorizontal[i].transform.position, Quaternion.identity);
                     poisonBuble.GetComponent<Rigidbody2D>().AddForce(transform.right * -5000);
+                    poisonBuble.GetComponent<Rigidbody2D>().AddForce(transform.up * -5000);
                     bubleAttackTimer = bubleSeconds;
                 }
             }
