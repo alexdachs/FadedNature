@@ -28,7 +28,7 @@ public class dash : MonoBehaviour
 
         void Dash()
         {
-            if (Input.GetButtonDown("Fire1") && Input.GetKey("a"))
+            if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey("a"))
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
 
@@ -37,7 +37,7 @@ public class dash : MonoBehaviour
 
 
             }
-            else if (Input.GetButtonDown("Fire1") && Input.GetKey("d"))
+            else if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey("d"))
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
 
