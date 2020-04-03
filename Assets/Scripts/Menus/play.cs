@@ -18,7 +18,7 @@ public class play : MonoBehaviour
     }
     void StartPlay()
     {
-        SceneManager.LoadScene("Enemy_and_ui");
+        SceneManager.LoadScene("Tutorial");
     }
     void StartOptions()
     {

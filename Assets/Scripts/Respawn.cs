@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RespawnTutorial : MonoBehaviour
+public class Respawn : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "MainChar")
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Tutorial");
 
         }
     }

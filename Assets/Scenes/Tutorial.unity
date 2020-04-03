@@ -530,7 +530,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 237398460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f9352c5a50737a49898f153725e4be9, type: 3}
+  m_Script: {fileID: 11500000, guid: ad91933c73fd8aa4bbb04946ae61d70e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &297751347
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 640637706}
   m_Layer: 0
   m_Name: env_ground_7 (8)
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3226,6 +3226,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6505830020139647433, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
+        type: 3}
+      propertyPath: m_Name
+      value: Main_Character_Standing-1.png
+      objectReference: {fileID: 0}
     - target: {fileID: 2338488822121057380, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3281,20 +3286,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3578672432425713960, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 999
-      objectReference: {fileID: 0}
     - target: {fileID: 6169391849452665279, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6505830020139647433, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
+    - target: {fileID: 3578672432425713960, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
         type: 3}
-      propertyPath: m_Name
-      value: Main_Character_Standing-1.png
+      propertyPath: m_SortingOrder
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 8196454229106388893, guid: f6c86c2474b4a2e46a0ba239ac0f3763,
         type: 3}
