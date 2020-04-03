@@ -110,5 +110,9 @@ public class Tree_boss : MonoBehaviour
         {
             collision.GetComponent<xp_hp>().TakeDamage(damage);
         }
+        if (collision.gameObject.tag == "Attack")
+        {
+            hp = hp - 100;
+        }
     }
 }

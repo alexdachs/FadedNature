@@ -66,9 +66,16 @@ public class Patrulla : MonoBehaviour
             DestinationPointReverse = 0;
             reverse = false;
         }
-        if(hp <= 0)
+        if (hp <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Attack")
+        {
+            hp = hp - 30;
         }
     }
 

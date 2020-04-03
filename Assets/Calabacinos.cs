@@ -47,8 +47,15 @@ public class Calabacinos : MonoBehaviour
             Destroy(gameObject);
         }
 
+
     }
-  
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Attack")
+        {
+            Health = Health - 50;
+        }
+    }
 
 
     public void TakeDamage(int _damage)
