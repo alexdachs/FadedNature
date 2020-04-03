@@ -9,7 +9,7 @@ public class RespawnTutorial : MonoBehaviour
     {
         if (collision.gameObject.tag == "MainChar")
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Tutorial");
 
         }
     }

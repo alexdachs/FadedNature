@@ -7,9 +7,9 @@ public class LeaveTutorial : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "MainChar")
         {
-            SceneManager.LoadScene("1st Level");
+            SceneManager.LoadScene("Level1");
 
         }
     }

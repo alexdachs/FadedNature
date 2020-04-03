@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 4316249773779466282}
   - component: {fileID: 812370274853239703}
   - component: {fileID: 1029827432}
+  - component: {fileID: 6966626399004123071}
   m_Layer: 0
   m_Name: Main_Character_Standing-1.png
   m_TagString: MainChar
@@ -352,3 +353,22 @@ MonoBehaviour:
   PuedoSaltar: 0
   salto: 2
   desbloqueado: 0
+--- !u!95 &6966626399004123071
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6505830020139647433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55400f920b1520742a616dd7d803ec95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

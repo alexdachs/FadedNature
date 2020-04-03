@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Espantapajaros : MonoBehaviour
 {
-    public int CurrentHealth;
+    public int CurrentHealth = 50;
     public int dmg;
 
     public static float MaxHealth;
@@ -18,7 +18,7 @@ public class Espantapajaros : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MaxHealth = 1;
+        CurrentHealth = 50;
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
@@ -28,7 +28,7 @@ public class Espantapajaros : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MaxHealth <= 0)
+        if (CurrentHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -45,6 +45,12 @@ public class Espantapajaros : MonoBehaviour
         {
             
             MaxHealth -= 0.1f;
+
+        }
+        if (collision.gameObject.tag == "Attack")
+        {
+
+            CurrentHealth = CurrentHealth - 25;
 
         }
     }
