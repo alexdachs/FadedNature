@@ -6,11 +6,7 @@ public class Cam : MonoBehaviour
 {
     public GameObject follow;
     public int maxpos;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+   
 
     // Update is called once per frame
     void FixedUpdate()
