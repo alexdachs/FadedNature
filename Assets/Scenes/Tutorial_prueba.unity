@@ -8246,11 +8246,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4642096834592630163, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
-        type: 3}
-      propertyPath: m_Name
-      value: cubo(personaje) Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 3377877716587541251, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8306,6 +8301,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4642096834592630163, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
+        type: 3}
+      propertyPath: m_Name
+      value: cubo(personaje) Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 8102365057095180170, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
         type: 3}
       propertyPath: m_Offset.y
@@ -8326,6 +8326,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 101.313675
       objectReference: {fileID: 0}
+    - target: {fileID: 8102365057095180182, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
+        type: 3}
+      propertyPath: rigidBody2D
+      value: 
+      objectReference: {fileID: 901348436}
     - target: {fileID: 8102365057095180183, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
         type: 3}
       propertyPath: MaxSpeed
@@ -8800,6 +8805,12 @@ Transform:
 --- !u!1 &901348429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4642096834592630163, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 540684524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &901348436 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8102365057095180169, guid: 1bd686e6e6dd314478b99f82ec91d9bd,
     type: 3}
   m_PrefabInstance: {fileID: 540684524}
   m_PrefabAsset: {fileID: 0}
