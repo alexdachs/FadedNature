@@ -2843,6 +2843,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8093537294831104506, guid: ef14d02e1f7431540910f11d5a8c0990,
+        type: 3}
+      propertyPath: m_Name
+      value: personaje
+      objectReference: {fileID: 0}
     - target: {fileID: 4683497175818084905, guid: ef14d02e1f7431540910f11d5a8c0990,
         type: 3}
       propertyPath: PlayerHp
@@ -2907,11 +2912,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8093537294831104506, guid: ef14d02e1f7431540910f11d5a8c0990,
-        type: 3}
-      propertyPath: m_Name
-      value: personaje
       objectReference: {fileID: 0}
     - target: {fileID: 8093537294831104507, guid: ef14d02e1f7431540910f11d5a8c0990,
         type: 3}
@@ -3085,6 +3085,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4049234016144467882, guid: 5d1955eb39c4eea4fb02b245eba1a8a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 4049234015026667115, guid: 5d1955eb39c4eea4fb02b245eba1a8a4,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3104,11 +3109,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049234016144467882, guid: 5d1955eb39c4eea4fb02b245eba1a8a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 4049234016144467926, guid: 5d1955eb39c4eea4fb02b245eba1a8a4,
         type: 3}
