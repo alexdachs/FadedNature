@@ -14,11 +14,13 @@ public class Patrulla : MonoBehaviour
     bool patrulla = true;
     bool reverse = false;
     int hp;
-    
+    private int initHP = 100;
+
     // Start is called before the first frame update
     void Start()
     {
-        hp = 70;
+        hp = initHP;
+
         NextPoint();
     }
     void NextPoint()
@@ -75,7 +77,7 @@ public class Patrulla : MonoBehaviour
     {
         if (collision.gameObject.tag == "Attack")
         {
-            hp = hp - 30;
+            hp = hp - 50;
         }
     }
 

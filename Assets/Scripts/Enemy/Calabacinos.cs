@@ -14,7 +14,7 @@ public class Calabacinos : MonoBehaviour
     public Transform[] ArrayPos;
     private int Spot;
 
-    public int Health;
+    public int Health = 100;
 
     public Vector2 direction;
 
@@ -22,7 +22,7 @@ public class Calabacinos : MonoBehaviour
     void Start()
     {
         Spot = Random.Range(0, ArrayPos.Length);
-        Health = 100;
+       
     }
 
     // Update is called once per frame
@@ -49,10 +49,11 @@ public class Calabacinos : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Attack")
+        if (collision.CompareTag ("Attack"))
         {
+            Destroy(collision.gameObject);
             Health = Health - 50;
         }
     }
