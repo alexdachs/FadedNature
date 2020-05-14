@@ -7,49 +7,87 @@ public class Salto : MonoBehaviour
 
 
 
-    
-    public float JumpForce = 1f;
-    private Rigidbody2D rigidBody2D;
-    public bool PuedoSaltar = false;
-
+    private Rigidbody2D rb;
+    private float jumpTimeCounter;
+    public float jumpTime;
+    public float jumpForce;
+    private bool isJumping = false;
+    BoxCollider2D Box2D;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        Box2D = GetComponent<BoxCollider2D>();
     }
+    // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Space) && isJumping == false)
+        {
+
+
+            Jump();
+        }
+
+    }
+
+
 
     void Jump()
     {
-        rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, JumpForce);
-        PuedoSaltar = false;
+
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        isJumping = true;
+
     }
 
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Suelo")
         {
-            PuedoSaltar = true;
+            if (isJumping)
+            {
+                bool col1 = false;
+                bool col2 = false;
+                bool col3 = false;
+                float center_x = (Box2D.bounds.min.x + Box2D.bounds.max.y) / 2;
+                Vector2 centerPosition = new Vector2(center_x, Box2D.bounds.min.y);
+                Vector2 leftPosition = new Vector2(Box2D.bounds.min.x, Box2D.bounds.min.y);
+                Vector2 rightPosition = new Vector2(Box2D.bounds.max.x, Box2D.bounds.min.y);
+
+                RaycastHit2D[] hits = Physics2D.RaycastAll(centerPosition, -Vector2.up, 2);
+                if (checkRaycastWithScenario(hits)) { col1 = true; }
+
+                hits = Physics2D.RaycastAll(leftPosition, -Vector2.up, 2);
+                if (checkRaycastWithScenario(hits)) { col2 = true; }
+
+                hits = Physics2D.RaycastAll(rightPosition, -Vector2.up, 2);
+                if (checkRaycastWithScenario(hits)) { col3 = true; }
+
+                if (col1 || col2 || col3) { isJumping = false; }
+            }
         }
-
-
     }
-
-
-
-    // Update is called once per frame
-    void Update()
+    private bool checkRaycastWithScenario(RaycastHit2D[] hits)
     {
-
-        if (Input.GetKeyDown(KeyCode.Space) && PuedoSaltar == true)
+        foreach (RaycastHit2D hit in hits)
         {
-            Jump();
+            if (hit.collider != null)
+            {
+                if (hit.collider.gameObject.tag == "Suelo")
+                {
+                    return true;
+                }
+            }
         }
-        
-
-
+        return false;
     }
+
+
+
+
 
 }
