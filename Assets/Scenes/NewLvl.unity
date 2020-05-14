@@ -7929,7 +7929,7 @@ GameObject:
   - component: {fileID: 1042186079}
   - component: {fileID: 1042186082}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ParedInvisible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
