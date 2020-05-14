@@ -6547,7 +6547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 577376698}
-  parallaxEfefct: 0.2
+  parallaxEfefct: 0.6
 --- !u!212 &359998126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7310,7 +7310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 577376698}
-  parallaxEfefct: 0.6
+  parallaxEfefct: 0.2
 --- !u!212 &678349316
 SpriteRenderer:
   m_ObjectHideFlags: 0
