@@ -6413,17 +6413,22 @@ PrefabInstance:
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_Offset.y
-      value: -1.675925
+      value: 0.65766567
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_Radius
-      value: 5.438433
+      value: 49.32649
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_Offset.x
-      value: 2.5646422
+      value: 7.6453204
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
@@ -6433,7 +6438,7 @@ PrefabInstance:
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -203.2
+      value: -89
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
@@ -6480,7 +6485,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3029575269924220214, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: jumpTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029575269924220214, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: jumpForce
+      value: 200
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1943275604413939049, guid: 5c2c99b1706d1cb448abaca6179872e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c2c99b1706d1cb448abaca6179872e6, type: 3}
 --- !u!1 &356566167 stripped
 GameObject:
@@ -6500,6 +6516,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01eb2071a48e4ac4090d67808969cbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &356566179
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356566167}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.815502, y: 5.434746}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 104, y: 124}
+    newSize: {x: 24, y: 28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 82.368996, y: 113.13051}
+  m_EdgeRadius: 0
 --- !u!1 &359998123
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,7 +7514,7 @@ GameObject:
   - component: {fileID: 738292183}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
