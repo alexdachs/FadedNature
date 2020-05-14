@@ -14,6 +14,9 @@ public class ataque : MonoBehaviour
     public bool ataqueDerecha = false;
     public bool ataqueIzquierda = false;
 
+    private float AttackTimer;
+    public float Seconds;
+
 
 
 
@@ -31,7 +34,7 @@ public class ataque : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        AttackTimer -= Time.deltaTime;
 
 
         if (Input.GetKeyDown(KeyCode.A))
@@ -47,39 +50,35 @@ public class ataque : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && ataqueIzquierda == true)
         {
-            StartCoroutine(Esperar());
+
+            if (AttackTimer <= 0)
+            {
+                GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
+                newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.left * bulletForce);
+                Destroy(newBullet, 5.0f);
+                AttackTimer = Seconds;
+            }
 
 
         }
 
         if (Input.GetButtonDown("Fire1") && ataqueDerecha == true)
         {
+            if (AttackTimer <= 0)
+            {
 
-            StartCoroutine(Esperar2());
 
+                GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
+                newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * bulletForce);
+                Destroy(newBullet, 5.0f);
+                AttackTimer = Seconds;
+            }
         }
 
 
     }
 
-    IEnumerator Esperar()
-    {
-        yield return new WaitForSeconds(1);
-        GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
-        newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.left * bulletForce);
-        Destroy(newBullet, 5.0f);
-        
-
-    }
-
-    IEnumerator Esperar2()
-    {
-        yield return new WaitForSeconds(1);
-        GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
-        newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * bulletForce);
-        Destroy(newBullet, 5.0f);
-        
-    }
+  
 
 
 

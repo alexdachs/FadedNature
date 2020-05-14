@@ -125,6 +125,7 @@ MonoBehaviour:
   bullet: {fileID: 3618963127291373054, guid: 17701cadf5672e0458ae918f52b40d4c, type: 3}
   ataqueDerecha: 0
   ataqueIzquierda: 0
+  Seconds: 1
 --- !u!114 &3029575269924220215
 MonoBehaviour:
   m_ObjectHideFlags: 0
