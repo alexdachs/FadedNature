@@ -43,8 +43,8 @@ public class Tree_boss : MonoBehaviour
         //DIE
         if (hp <= 0)
         {
-           Destroy(gameObject);
-            SceneManager.LoadScene("ToBeContinued");
+           //Destroy(gameObject);
+           
         }
         //MELE
         if(Vector2.Distance(transform.position,target.transform.position) < 3)
