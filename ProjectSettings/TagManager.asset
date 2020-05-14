@@ -18,6 +18,7 @@ TagManager:
   - LostSoul
   - TriggerActivate
   - GM
+  - Caida
   layers:
   - Default
   - TransparentFX
