@@ -17,6 +17,7 @@ TagManager:
   - Calabacin
   - LostSoul
   - TriggerActivate
+  - GM
   layers:
   - Default
   - TransparentFX
