@@ -13,11 +13,11 @@ public class Salto : MonoBehaviour
     public bool PuedoSaltar = false;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
-        
     }
 
     void Jump()
@@ -47,9 +47,7 @@ public class Salto : MonoBehaviour
         {
             Jump();
         }
-
-
-
+        
 
 
     }
