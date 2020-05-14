@@ -112,6 +112,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9870834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9870835}
+  m_Layer: 0
+  m_Name: GameObject_ruta2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9870835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9870834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 869, y: -104, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9922910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +2835,36 @@ Transform:
   m_Father: {fileID: 883895737}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1230899239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230899240}
+  m_Layer: 0
+  m_Name: GameObject_ruta4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1230899240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230899239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3960, y: -441, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250015777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,12 +3104,12 @@ PrefabInstance:
     - target: {fileID: 4537963233905982690, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 737
+      value: 775
       objectReference: {fileID: 0}
     - target: {fileID: 4537963233905982690, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -81
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 4537963233905982690, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
@@ -3101,6 +3161,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: calabacino (1) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.data[0]
+      value: 
+      objectReference: {fileID: 2120836346}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.data[1]
+      value: 
+      objectReference: {fileID: 9870835}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.data[0]
+      value: 
+      objectReference: {fileID: 9870835}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.data[1]
+      value: 
+      objectReference: {fileID: 2120836346}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
 --- !u!1 &1351030783
@@ -15807,6 +15897,36 @@ Transform:
   m_Father: {fileID: 914559909}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1707592114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707592115}
+  m_Layer: 0
+  m_Name: GameObject_ruta3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1707592115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707592114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3407, y: -450, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764784522
 GameObject:
   m_ObjectHideFlags: 0
@@ -19936,6 +20056,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f68196037fb2d6a449ada57c406462d2, type: 3}
+--- !u!1 &2120836345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120836346}
+  m_Layer: 0
+  m_Name: GameObject_ruta1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120836346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120836345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 574, y: -67, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2129762745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20003,5 +20153,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: calabacino (1) 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.data[0]
+      value: 
+      objectReference: {fileID: 1707592115}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntos.Array.data[1]
+      value: 
+      objectReference: {fileID: 1230899240}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.data[0]
+      value: 
+      objectReference: {fileID: 1230899240}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: puntosReverse.Array.data[1]
+      value: 
+      objectReference: {fileID: 1707592115}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
