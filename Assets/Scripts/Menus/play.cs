@@ -18,7 +18,7 @@ public class play : MonoBehaviour
     }
     void StartPlay()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Tutorial_prueba");
     }
     void StartOptions()
     {
