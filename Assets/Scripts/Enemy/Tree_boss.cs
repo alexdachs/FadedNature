@@ -21,6 +21,8 @@ public class Tree_boss : MonoBehaviour
     private int random;
     public GameObject buble;
 
+    public GameObject portal;
+
     private float bubleAttackTimer;
     public float bubleSeconds;
 
@@ -43,8 +45,8 @@ public class Tree_boss : MonoBehaviour
         //DIE
         if (hp <= 0)
         {
-           //Destroy(gameObject);
-           
+            //Destroy(gameObject);
+            portal.SetActive(true);
         }
         //MELE
         if(Vector2.Distance(transform.position,target.transform.position) < 3)
