@@ -4,15 +4,17 @@ using UnityEngine;
 
 
 
-public class ataque : MonoBehaviour
+public class ataque2 : MonoBehaviour
 {
     public Rigidbody2D rigidBody2D;
-
+    public int tiempoDisparo = 1;
 
     public float bulletForce;
     public GameObject bullet;
     public bool ataqueDerecha = false;
     public bool ataqueIzquierda = false;
+
+    public bool puedoDisparar = true;
 
 
 
@@ -47,14 +49,17 @@ public class ataque : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && ataqueIzquierda == true)
         {
-            StartCoroutine(Esperar());
+            if (puedoDisparar == true)
+            {
+                StartCoroutine(Esperar());
+            }
 
 
         }
 
         if (Input.GetButtonDown("Fire1") && ataqueDerecha == true)
         {
-
+       
             StartCoroutine(Esperar2());
 
         }
@@ -64,11 +69,17 @@ public class ataque : MonoBehaviour
 
     IEnumerator Esperar()
     {
-        yield return new WaitForSeconds(1);
+
         GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
         newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.left * bulletForce);
         Destroy(newBullet, 5.0f);
-        
+
+
+        puedoDisparar = false;
+        yield return new WaitForSeconds(tiempoDisparo);
+        puedoDisparar = true;
+
+
 
     }
 
@@ -78,8 +89,14 @@ public class ataque : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
         newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * bulletForce);
         Destroy(newBullet, 5.0f);
-        
+
     }
+
+
+    
+    
+    
+    
 
 
 
