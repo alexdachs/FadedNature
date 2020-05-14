@@ -6413,12 +6413,12 @@ PrefabInstance:
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_Offset.y
-      value: -6.4845963
+      value: -1.675925
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_Radius
-      value: 8.822312
+      value: 5.438433
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
