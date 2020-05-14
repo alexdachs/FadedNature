@@ -32,7 +32,7 @@ public class Tree_boss : MonoBehaviour
     void Start()
     {
         //GET PLAYER
-        target = GameObject.FindGameObjectWithTag("MainChar").GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         //HP
         hp = 500;
         meleAttackTimer = meleSeconds;
@@ -45,7 +45,7 @@ public class Tree_boss : MonoBehaviour
         //DIE
         if (hp <= 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
             portal.SetActive(true);
         }
         //MELE
@@ -102,14 +102,14 @@ public class Tree_boss : MonoBehaviour
         melee = false;
     }
 
-    public void TakeDamage(int _damage)
-    {
-        hp -= _damage;
-    }
+    //public void TakeDamage(int _damage)
+    //{
+    //    hp -= _damage;
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "MainChar")
+        if (collision.gameObject.tag == "Player")
         {
             collision.GetComponent<xp_hp>().TakeDamage(damage);
         }
