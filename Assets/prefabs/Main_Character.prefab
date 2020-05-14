@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpTime: 1
-  jumpForce: 300
+  jumpForce: 310
 --- !u!114 &3029575269924220201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 4e+18
   rigidBody2D: {fileID: 3029575269924220213}
+  Seconds: 1
 --- !u!95 &1917620266
 Animator:
   serializedVersion: 3
