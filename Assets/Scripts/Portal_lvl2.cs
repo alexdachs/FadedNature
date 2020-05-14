@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal_tutorial : MonoBehaviour
+public class Portal_lvl2 : MonoBehaviour
 {
     // Start is called before the first frame update
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == ("Player"))
-       {
-            SceneManager.LoadScene("NewLvl");
-       }
-    }
-}
+
 
     // Update is called once per frame
-    
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag==("Player"))
+        {
+            SceneManager.LoadScene("ToBeContinued");
+        }
+    }
+}
