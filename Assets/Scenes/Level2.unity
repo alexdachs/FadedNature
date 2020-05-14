@@ -3191,6 +3191,11 @@ PrefabInstance:
       propertyPath: puntosReverse.Array.data[1]
       value: 
       objectReference: {fileID: 2120836346}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
 --- !u!1 &1351030783
@@ -20183,5 +20188,10 @@ PrefabInstance:
       propertyPath: puntosReverse.Array.data[1]
       value: 
       objectReference: {fileID: 1707592115}
+    - target: {fileID: 5031756111932091609, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
