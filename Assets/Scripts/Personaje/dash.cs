@@ -11,7 +11,8 @@ public class dash : MonoBehaviour
 
     public Rigidbody2D rigidBody2D;
 
-
+    private float AttackTimer;
+    public float Seconds;
 
 
     // Use this for initialization
@@ -23,13 +24,20 @@ public class dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AttackTimer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+            if (AttackTimer <= 0)
+            {
+                  GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+            }
         }
         else if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
+            if (AttackTimer <= 0)
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
+            }
         }
 
 

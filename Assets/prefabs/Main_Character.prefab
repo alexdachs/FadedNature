@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 4e+18
   rigidBody2D: {fileID: 3029575269924220213}
+  Seconds: 1
 --- !u!95 &1917620266
 Animator:
   serializedVersion: 3
