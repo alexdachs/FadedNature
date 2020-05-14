@@ -6493,7 +6493,7 @@ PrefabInstance:
     - target: {fileID: 3029575269924220214, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: jumpForce
-      value: 200
+      value: 280
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1943275604413939049, guid: 5c2c99b1706d1cb448abaca6179872e6, type: 3}
@@ -23590,6 +23590,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114243340820348282, guid: 8bd9efbf42a8c31478e6f1ab04a0055d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2869976735402849616, guid: 8bd9efbf42a8c31478e6f1ab04a0055d,
         type: 3}
       propertyPath: puntos.Array.size
