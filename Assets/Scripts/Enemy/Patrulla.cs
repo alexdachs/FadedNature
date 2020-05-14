@@ -47,11 +47,11 @@ public class Patrulla : MonoBehaviour
         {
             NextPoint();
         }
-        if (Vector3.Distance(transform.position, puntos[DestinationPoint].position) < 125f && DestinationPoint != puntos.Length && reverse == false)
+        if (Vector3.Distance(transform.position, puntos[DestinationPoint].position) < 1 && DestinationPoint != puntos.Length && reverse == false)
         {
             DestinationPoint += 1;
         }
-        if (Vector3.Distance(transform.position, puntosReverse[DestinationPointReverse].position) < 125f && DestinationPointReverse != puntosReverse.Length && reverse == true)
+        if (Vector3.Distance(transform.position, puntosReverse[DestinationPointReverse].position) < 1 && DestinationPointReverse != puntosReverse.Length && reverse == true)
         {
             DestinationPointReverse += 1;
         }
