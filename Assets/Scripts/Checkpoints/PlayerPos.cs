@@ -12,8 +12,6 @@ public class PlayerPos : MonoBehaviour
         transform.position = gm.lastCheckPointPos;
     }
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+
     }
 }
