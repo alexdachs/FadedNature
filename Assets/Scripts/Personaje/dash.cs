@@ -23,31 +23,27 @@ public class dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey("a"))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.A))
         {
-            StartCoroutine(Esperar());
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
         }
-        else if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey("d"))
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.D))
         {
-            StartCoroutine(Esperar2());
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
         }
 
 
     }
 
 
-    IEnumerator Esperar()
-    {
-        yield return new WaitForSeconds(1);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
-    }
+    
+       
+      
+    
 
-    IEnumerator Esperar2()
-    {
-        yield return new WaitForSeconds(1);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
-
-    }
+    
+      
+    
 
 
 
