@@ -73,20 +73,20 @@ public class xp_hp : MonoBehaviour
 
         if (collision.gameObject.tag == "Calabacin")
         {
-            hp = hp - 2;
+            hp = hp - 10;
         }
         if (collision.gameObject.tag == "Bat")
         {
-            hp = hp - 2;
+            hp = hp - 10;
         }
         if (collision.gameObject.tag == "LostSoul")
         {
-            hp = hp - 5;
+            hp = hp - 10;
         }
 
         if (collision.gameObject.tag == "leave_atk")
         {
-            hp = hp - 15;
+            hp = hp - 10;
         }
         if (collision.gameObject.tag == "Potion")
         {
