@@ -52,7 +52,7 @@ public class rightAttack : MonoBehaviour
         }
         if (collision.gameObject.tag == "Boss")
         {
-            collision.GetComponent<Tree_boss>().TakeDamage(damage);
+            //collision.GetComponent<Tree_boss>().TakeDamage(damage);
         }
     }
     
