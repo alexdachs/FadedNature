@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4537963233905982688}
   - component: {fileID: 4537963233905983263}
   - component: {fileID: 4537963233905983262}
+  - component: {fileID: 114325003647022786}
   m_Layer: 0
   m_Name: calabacino (1) 1
   m_TagString: Untagged
@@ -146,3 +147,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 531.6699, y: 386.13672}
   m_EdgeRadius: 0
+--- !u!114 &114325003647022786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537963233905983261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f56dc77e1cfbb489275617f8584be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
