@@ -97,7 +97,7 @@ MonoBehaviour:
   speed: 0
   startWaitTime: 0
   ArrayPos: []
-  Health: 0
+  Health: 100
   direction: {x: 0, y: 0}
 --- !u!50 &4537963233905983263
 Rigidbody2D:
