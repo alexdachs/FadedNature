@@ -40,14 +40,14 @@ public class dash : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && (Input.GetKeyDown(KeyCode.LeftShift)))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftArrow))
         {
             if (AttackTimer <= 0)
             {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+                  GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
             }
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && (Input.GetKeyDown(KeyCode.LeftShift)))
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKey(KeyCode.RightArrow))
         {
             if (AttackTimer <= 0)
             {
