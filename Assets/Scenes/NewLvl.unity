@@ -420,6 +420,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &161667515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +440,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -6807,26 +6811,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main_Character
       objectReference: {fileID: 0}
-    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.65766567
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
-        type: 3}
-      propertyPath: m_Radius
-      value: 49.32649
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 7.6453204
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6882,6 +6866,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8619185398469685986, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: PlayerHp
+      value: 
+      objectReference: {fileID: 725951251}
     - target: {fileID: 3029575269924220214, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: jumpTime
@@ -6892,11 +6881,26 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 280
       objectReference: {fileID: 0}
-    - target: {fileID: 8619185398469685986, guid: 5c2c99b1706d1cb448abaca6179872e6,
+    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
-      propertyPath: PlayerHp
-      value: 
-      objectReference: {fileID: 725951251}
+      propertyPath: m_Offset.y
+      value: 0.65766567
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: m_Radius
+      value: 49.32649
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 7.6453204
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029575269924220210, guid: 5c2c99b1706d1cb448abaca6179872e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1943275604413939049, guid: 5c2c99b1706d1cb448abaca6179872e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c2c99b1706d1cb448abaca6179872e6, type: 3}
@@ -7396,6 +7400,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &507180633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7414,6 +7420,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -7438,6 +7446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_Poisonball_9x25_0
+      objectReference: {fileID: 0}
     - target: {fileID: 105644567143186725, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7492,11 +7505,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_Poisonball_9x25_0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8abd87a91e7fa944d9b0aa269b52ae6a, type: 3}
@@ -7616,6 +7624,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_Poisonball_9x25_0 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 105644567143186725, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7675,11 +7688,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_Poisonball_9x25_0 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 105644567143186747, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
         type: 3}
@@ -8073,6 +8081,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
+        type: 3}
+      propertyPath: m_Name
+      value: GameObject (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 571130773488302409, guid: f68196037fb2d6a449ada57c406462d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8138,11 +8151,6 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1126514279}
-    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
-        type: 3}
-      propertyPath: m_Name
-      value: GameObject (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f68196037fb2d6a449ada57c406462d2, type: 3}
 --- !u!1 &705230284
@@ -9168,6 +9176,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5401809426476251071, guid: 8bd9efbf42a8c31478e6f1ab04a0055d,
+        type: 3}
+      propertyPath: m_Name
+      value: Bat (1) 1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2869976735402849616, guid: 8bd9efbf42a8c31478e6f1ab04a0055d,
         type: 3}
       propertyPath: puntos.Array.size
@@ -9267,11 +9280,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401809426476251071, guid: 8bd9efbf42a8c31478e6f1ab04a0055d,
-        type: 3}
-      propertyPath: m_Name
-      value: Bat (1) 1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bd9efbf42a8c31478e6f1ab04a0055d, type: 3}
@@ -9470,6 +9478,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 56382367307034045, guid: 2b18ab9ce30408f4c86cdc22bb458569,
+        type: 3}
+      propertyPath: m_Name
+      value: Game Master
+      objectReference: {fileID: 0}
     - target: {fileID: 56382367307034044, guid: 2b18ab9ce30408f4c86cdc22bb458569,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9524,11 +9537,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56382367307034045, guid: 2b18ab9ce30408f4c86cdc22bb458569,
-        type: 3}
-      propertyPath: m_Name
-      value: Game Master
       objectReference: {fileID: 0}
     - target: {fileID: 56382367307034047, guid: 2b18ab9ce30408f4c86cdc22bb458569,
         type: 3}
@@ -9717,6 +9725,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1128688049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9735,6 +9745,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -10345,6 +10357,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -10578,6 +10592,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -11146,6 +11162,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -11175,6 +11193,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
+        type: 3}
+      propertyPath: m_Name
+      value: GameObject (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 571130773488302409, guid: f68196037fb2d6a449ada57c406462d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11240,11 +11263,6 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1540301856}
-    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
-        type: 3}
-      propertyPath: m_Name
-      value: GameObject (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f68196037fb2d6a449ada57c406462d2, type: 3}
 --- !u!1 &1511451429
@@ -23762,6 +23780,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
+        type: 3}
+      propertyPath: m_Name
+      value: GameObject (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 571130773488302409, guid: f68196037fb2d6a449ada57c406462d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23827,11 +23850,6 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 499485172}
-    - target: {fileID: 571130773488302412, guid: f68196037fb2d6a449ada57c406462d2,
-        type: 3}
-      propertyPath: m_Name
-      value: GameObject (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f68196037fb2d6a449ada57c406462d2, type: 3}
 --- !u!1001 &1724913974
@@ -23841,6 +23859,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_Name
+      value: calabacino (1) 1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4537963233905982690, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23896,11 +23919,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
-        type: 3}
-      propertyPath: m_Name
-      value: calabacino (1) 1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4537963233905983263, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_Mass
@@ -23941,6 +23959,11 @@ PrefabInstance:
       propertyPath: speed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8412585707706164857, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a740a2f2e4714af45bf0c6b17f3d6203, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
 --- !u!1 &1725258664
@@ -24173,6 +24196,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -24281,6 +24306,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_Name
+      value: calabacino (1) 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Calabacin
+      objectReference: {fileID: 0}
     - target: {fileID: 4537963233905982690, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24336,16 +24371,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
-        type: 3}
-      propertyPath: m_Name
-      value: calabacino (1) 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4537963233905983261, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
-        type: 3}
-      propertyPath: m_TagString
-      value: Calabacin
-      objectReference: {fileID: 0}
     - target: {fileID: 4537963233905983263, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
         type: 3}
       propertyPath: m_Mass
@@ -24385,6 +24410,16 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412585707706164857, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a740a2f2e4714af45bf0c6b17f3d6203, type: 2}
+    - target: {fileID: 8412585707706164857, guid: 3f01ab0a1499b974d8e6f002201dbcfe,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f01ab0a1499b974d8e6f002201dbcfe, type: 3}
@@ -24850,6 +24885,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
+        type: 3}
+      propertyPath: m_Name
+      value: Small_Poisonball_9x25_0 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 105644567143186725, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24904,11 +24944,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 105644567143186727, guid: 8abd87a91e7fa944d9b0aa269b52ae6a,
-        type: 3}
-      propertyPath: m_Name
-      value: Small_Poisonball_9x25_0 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8abd87a91e7fa944d9b0aa269b52ae6a, type: 3}
@@ -25264,6 +25299,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3887232834367668693, guid: a57a1c516e42e7b4d9cb6632087da2c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 3887232833097067386, guid: a57a1c516e42e7b4d9cb6632087da2c2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -25388,11 +25428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3887232834367668693, guid: a57a1c516e42e7b4d9cb6632087da2c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a57a1c516e42e7b4d9cb6632087da2c2, type: 3}
