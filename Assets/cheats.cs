@@ -18,7 +18,7 @@ public class cheats : MonoBehaviour
         {
             SceneManager.LoadScene("NewLvl");
         }
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha3))
         {
             SceneManager.LoadScene("Level2");
         }
