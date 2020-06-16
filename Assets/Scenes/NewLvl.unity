@@ -6830,12 +6830,12 @@ PrefabInstance:
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -443.4
+      value: -494
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -89
+      value: -103
       objectReference: {fileID: 0}
     - target: {fileID: 3029575269924220211, guid: 5c2c99b1706d1cb448abaca6179872e6,
         type: 3}
@@ -7742,7 +7742,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 540
+  orthographic size: 180
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7766,7 +7766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577376698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -10}
+  m_LocalPosition: {x: -488, y: -154, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1264501637}
@@ -7786,8 +7786,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 1
-  m_RefResolutionX: 1920
-  m_RefResolutionY: 1080
+  m_RefResolutionX: 720
+  m_RefResolutionY: 360
   m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 1
@@ -7809,6 +7809,9 @@ MonoBehaviour:
   End: {fileID: 2055368278}
   follow: {fileID: 356566167}
   maxpos: 30000
+  minpos: -447
+  maxposy: 40
+  minposy: -346
 --- !u!1 &614567629
 GameObject:
   m_ObjectHideFlags: 0
@@ -9152,7 +9155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069285478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -62.434128, z: -19.25}
+  m_LocalPosition: {x: -697, y: -62.434128, z: -19.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24804,7 +24807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055368277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4125, y: -62.434128, z: -19.25}
+  m_LocalPosition: {x: 4556, y: -411, z: -19.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25264,7 +25267,7 @@ PrefabInstance:
     - target: {fileID: 3887232833097067386, guid: a57a1c516e42e7b4d9cb6632087da2c2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -53.400146
+      value: -53.40016
       objectReference: {fileID: 0}
     - target: {fileID: 3887232833182742548, guid: a57a1c516e42e7b4d9cb6632087da2c2,
         type: 3}
